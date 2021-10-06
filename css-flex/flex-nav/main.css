@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  width: inherit;
+}
+.search {
+    flex:1;
+}
+
+@media all and (max-width: 600px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .container > li{
+        flex: 1 1 50%;
+    }
+}
+@media all and (max-width: 400px){
+    .container > li{
+        flex: 1 1 100%;
+    }
+    li > input{
+        text-align: center;
+    }
+    .search{
+        order: 1;
+    }
+}
