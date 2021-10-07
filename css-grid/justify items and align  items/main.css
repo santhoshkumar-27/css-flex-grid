@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 30px auto 30px;
+  /* justify-items: stretch; this is default value*/
+  /* justify-items: center; */
+  /* justify-items: start; */
+  /* justify-items: end; */
+  /* align-items: center; */
+  /* align-items: start; */
+  /* align-items: end; */
+  /* align-items: baseline; */
+}
+.header {
+  grid-column: 1/-1;
+}
+.sidebar {
+  grid-row: 2/3;
+  grid-column: 1 / span 3;
+}
+.content {
+  /* justify-self: center; */
+ /* align-self: end; this is only for the particular content */
+  grid-column: 4/ -1;
+}
+.footer {
+  grid-column: 1/ -1;
+}
