@@ -1,0 +1,41 @@
+html,
+body{
+    height: 100%;
+}
+body{
+    background-color: burlywood;
+}
+p{
+    text-align: center;
+}
+.main-body{
+    height: 80%;
+    margin-inline: auto;
+    border: 1px solid black;
+    text-align: center;
+}
+.flexbox-header{
+    max-width: 600px;
+    margin-inline: auto;
+    border: 1px solid blue;
+    background-color: lightblue;
+}
+.grid-page{
+    height: 50%;
+    max-width: 600px;
+    margin-inline: auto;
+    border: 1px solid rgb(63, 63, 92);
+    background-color: lightblue;
+}
+.grid-page>div:nth-child(1){
+    background-color: lightseagreen;
+}
+.grid-page>div:nth-child(2){
+    background-color: lightslategrey;
+}
+.grid-page>div:nth-child(3){
+    background-color: rgb(221, 205, 113);
+}
+.grid-page>div:nth-child(4){
+    background-color: rgb(75, 131, 194);
+}

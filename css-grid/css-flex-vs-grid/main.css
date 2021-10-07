@@ -1,0 +1,25 @@
+.flexbox-header {
+  display: flex;
+}
+.flexbox-header > div:nth-child(3) {
+  margin-left: auto;
+}
+/* flex-ends */
+
+.grid-page {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 30px auto 30px;
+}
+.header {
+  grid-column: 1/-1;
+}
+.sidebar {
+  grid-column: 1/4;
+}
+.content {
+  grid-column: 4/-1;
+}
+.footer {
+    grid-column: 1/-1;
+}
